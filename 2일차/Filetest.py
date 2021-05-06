@@ -27,10 +27,12 @@ file2 = open("a.txt" , "a") # 파일없으면 새로 생성/ 파일 있으면 �
 file2.write("\nCreate new Line")
 file2.close()
 
+file_name = 'moduletest.py'
+
 # 파일 한라인씩 읽어서 리스트에 저장
 # file_list = []
 file_list = list()
-file3 = open("moduletest.py", "r", encoding="utf-8")
+file3 = open(file_name, "r", encoding="utf-8")
 for line in file3:
     file_list.append(line)
 file3.close()
